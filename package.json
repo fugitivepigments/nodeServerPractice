@@ -1,0 +1,23 @@
+{
+  "name": "nodeserverpractice",
+  "version": "1.0.0",
+  "description": "Practicing creating servers with node.js",
+  "main": "serverGoodBad.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fugitivepigments/nodeServerPractice.git"
+  },
+  "author": "AR Mancuso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fugitivepigments/nodeServerPractice/issues"
+  },
+  "homepage": "https://github.com/fugitivepigments/nodeServerPractice#readme",
+  "dependencies": {
+    "inquirer": "^5.2.0",
+    "twitter": "^1.7.1"
+  }
+}
