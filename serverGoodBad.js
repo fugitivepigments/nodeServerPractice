@@ -26,12 +26,15 @@ inquirer.prompt([{
     };
     client.get('statuses/user_timeline', params, function(error, tweets, response) {
       if (!error) {
+        for (var i = 0; i < tweets.length; i++) {
+          console.log(tweets[i].text);
+        }
         var randomRes = Math.floor(Math.random() * tweets.length);
         http.createServer(function(req, res) {
           res.writeHead(200, {
             'Content-Type': 'text/html'
           });
-          res.end(tweets[randomRes]);
+          res.end(tweets[randomRes].text);
         }).listen(PORTONE);
 
         console.log('Server running on port: ' + PORTONE);
